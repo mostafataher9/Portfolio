@@ -1,0 +1,21 @@
+@import "tailwindcss";
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+.a-style {
+  @apply bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:text-gray-200 text-lg rounded-md px-4 py-2;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "burtons";
+  /* In Next.js, files in /public are served from the root URL */
+  src: url("/burtons.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
